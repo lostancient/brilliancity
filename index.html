@@ -1,11 +1,111 @@
 <!DOCTYPE html>
+        <!-- need this part  <form action="https://learn.nucamp.co/show_everything.php" method="post" enctype="multipart/form-data">
+    -->    
 <html>
     <head>
+        <title>Dive Log</title>
+        <meta charset="utf-8"  name="author" content="Jason Brand">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <h1>Header</h1>
-        <p>Test</p>
-        <p>Test 2</p>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header ">
+                    <div class="col-12 ">
+                        <h1>J & B's dive log</h1>
+                        <p>A fully featured online dive log</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="col-12 col-md-7">
+                <div class="row row-header">
+                    <div class="col-12 order-sm-first col-md-8">
+                        <h3>Dive Info</h3>
+                    </div>
+                </div>
+                <fieldset class="col-12 col-md-7">
+                    <div class="row row-content"> <!--Row 1-->
+                        <div class="col-6">
+                            <label for="divenum">Number</label>
+                            <input type=number name="divenum" size="10" placeholder="1" >
+                        </div>
+                        <div class="col-6">
+                            <label for="location">Location</label>
+                            <input type=text name="location" placeholder="Cozumel" size="10">
+                        </div>
+                    </div>
+                        <div class="row row-content" ><!--Row 2-->
+                            <div class="col-6">
+                                <label for="conditions">Conditions</label>
+                                <input type=text name="conditions" placeholder="Sunny" size="10">
+                            </div>
+                            <div class="col-6">
+                                <label for="visibility">Visibility</label>
+                                <input type=text name="visibility" placeholder="20 feet" size="10">
+                            </div>
+                        </div>
+
+                        <div class="row row-content" ><!--Row 3-->
+                            <div class="col-6">
+                                <label for="buddy">Buddy</label>
+                                <input type=text name="buddy" placeholder="Buddy bob" size="10">
+                            </div>
+                            <div class="col-6">
+                                <label for="weight">Weight</label>
+                                <input type=number name="weight" placeholder="5 lbs" size="10">
+                            </div>
+                        </div>
+
+                        <div class="row row-content" ><!--Row 4-->
+                            <div class="col-6">
+                                <label for="startpsi">Start PSI</label>
+                                <input type=number name="startpsi" placeholder="3000" size="10">
+                            </div>
+                            <div class="col-6">
+                                <label for="endpsi">End PSI</label>
+                                <input type=number name="endpsi" placeholder="300" size="10">
+                            </div>
+                        
+                        <div class="col-6">
+                                <label for="date">Date</label>
+                                <input type=date name="date" size="10">
+                            </div>
+                        <div class="col-6">
+                            <label for="divenotes">Notes</label>
+                            <textarea rows="1" cols="20" name="divenotes">  </textarea>
+                        </div>
+                </fieldset>
+            </div>  
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12  order-sm-last col-md-4">
+                    <h3>Pictures</h3>
+                </div>
+            </div>
+        </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-left">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Plan a Dive</a></li>
+                        <li><a href="#">Dive Suggestions</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    </footer>
     </body>
 </html>

@@ -4,17 +4,22 @@
   "description": "Test directory to learn GIT and Node",
   "main": "index.html",
   "scripts": {
-    "start":"npm run lite",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite":"lite-server"
+    "lite": "lite-server"
   },
   "repository": {
     "type": "git",
-    "url": "C:\\Users\\Lost\\Dropbox\\Nucamp\\Git"
+    "url": "https://github.com/lostancient/brilliancity"
   },
   "author": "Jason Brand",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
   }
 }

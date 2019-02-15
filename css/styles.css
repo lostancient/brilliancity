@@ -9,16 +9,21 @@
     min-height: 0px;
     /* border-: 1px solid black; */
 }
+
 .footer {
     /* background-color: skyblue; */
-    margin: 0px auto;
-    padding: 20px 0px 20px 0px;
+    margin: 20px auto;
+    padding: 20px 0px 0px 0px;
+    /* position: relative; */
+    /* width: 100%; */
+    border-top: 1px solid;
 }
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
     background: skyblue;
     color: #0f0f0f;
+    border-bottom: 1px solid;
 }
 .address {
     font-size: 80%;
@@ -36,9 +41,15 @@ fieldset {
     padding-right: 0.75em;
     border: 1px solid;
   }
-  .pix{
+  #pix{
       border: 1px solid black;
   }
   body{
     /* background: skyblue; */
   }
+  .parent-container {
+    display: flex;
+ }
+ /* #pix{
+     padding-bottom: 0.625em;
+ } */

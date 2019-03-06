@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+        <!-- need this part  <form action="https://learn.nucamp.co/show_everything.php" method="post" enctype="multipart/form-data">
+    -->    
+<html>
+    <head>
+        <title>Dive Log</title>
+        <meta charset="utf-8"  name="author" content="Jason Brand">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap-social.css">
+    </head>
+    <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="index.html"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Plan a Dive</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dive Suggestions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span>About</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span> Login</a>
+                </span>   
+            </div>          
+        </div>
+    </nav>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12 ">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="parent-container col">
+            <div class="container">
+                <div class="col-12 offset-2 col-md-12">
+                    <div class="row row-header">
+                        <div class="col-12 order-sm-first">
+                            <h3>Dive Info</h3>
+                        </div>
+                    </div>
+                    <fieldset class="col-12 col-md-12">
+                        <form>
+                            <div class="form-group row"> <!--Row 1-->
+                                <div class="col-6">
+                                    <label for="divenum" class="col-form-label">Number</label>
+                                    <input type=number name="divenum" size="10" placeholder="1">
+                                </div>
+                                <div class="col-6">
+                                    <label for="location" class="col-form-label">Location</label>
+                                    <input type=text name="location" placeholder="Cozumel">
+                                </div>
+                            </div>
+                                <div class="form-group row" ><!--Row 2-->
+                                    <div class="col-6">
+                                        <label for="conditions" class="col-form-label">Conditions</label>
+                                        <input type=text name="conditions" placeholder="Sunny">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="visibility" class="col-form-label">Visibility</label>
+                                        <input type=text name="visibility" placeholder="20 feet">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row" ><!--Row 3-->
+                                    <div class="col-6">
+                                        <label for="buddy" class="col-form-label">Buddy</label>
+                                        <input type=text name="buddy" placeholder="Buddy bob">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="weight" class="col-form-label">Weight</label>
+                                        <input type=number name="weight" placeholder="5 lbs">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row" ><!--Row 4-->
+                                    <div class="col-6">
+                                        <label for="startpsi" class="col-form-label">Start PSI</label>
+                                        <input type=number name="startpsi" placeholder="3000">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="endpsi" class="col-form-label">End PSI</label>
+                                        <input type=number name="endpsi" placeholder="300">
+                                    </div>
+                                </div>
+                                <div class="form-group row" ><!--Row 5-->
+                                    <div class="col-6">
+                                        <label for="date" class="col-form-label">Date</label>
+                                        <input type=date name="date">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="divenotes" class="col-form-label">Notes</label>
+                                        <textarea rows="1" cols="" name="divenotes">  </textarea>
+                                    </div>
+                                </div>
+                            </form>
+                    </fieldset>
+                </div>  
+            </div>
+            <div class="container">
+                <div class="col-12 offset-4 col-md-6">
+                    <div class="row-header">
+                        <h3>Dive pictures</h3>
+                    </div>
+                    <div class="row ">
+                        <div id="mycarousel" class="carousel slide col" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="d-block img-fluid" src="img/jellyfish.jpg" alt="jellyfish">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                                </div>
+                            <div class="carousel-item">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/crab.jpg" alt="crab">
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#mycarousel" data-slide-to="1"></li>
+                                <!-- <li data-target="#mycarousel" data-slide-to="2"></li> -->
+                            </ol>
+                        </div>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        <button class="btn btn-link btn-sm" id="carousel-button">
+                            <span id="carousel-button-icon" class="fa fa-pause"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-4 col-sm-3">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                            <li><a href="#">Plan a Dive</a></li>
+                            <li><a href="#">Dive Suggestions</a></li>
+                            <li><a href="#">Gallery</a></li> 
+                            <li><a href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                          </ul>
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+       <script>
+        //    $(document).ready(function(){
+        //        $('[data-toggle="tooltip"]').tooltip();
+        //    });
+        // $(document).ready(function(){
+        //     $("#mycarousel").carousel( { interval: 2000 } );
+        //     $("#carousel-pause").click(function(){
+        //         $("#mycarousel").carousel('pause');
+        //     });
+        //     $("#carousel-play").click(function(){
+        //         $("#mycarousel").carousel('cycle');
+        //     });
+        // });
+    
+        $("#carousel-button").click(function(){
+        if ($("#carousel-button").children("span").hasClass('fa-pause')) 
+            {
+            $("#mycarousel").carousel('pause');
+            $("#carousel-button").children("span").removeClass('fa-pause');
+            $("#carousel-button").children("span").addClass('fa-play');
+        }
+        else if ($("#carousel-button").children("span").hasClass('fa-play')){
+            $("#mycarousel").carousel('cycle');
+            $("#carousel-button").children("span").removeClass('fa-play');
+            $("#carousel-button").children("span").addClass('fa-pause'); 
+        }
+    });
+    </script>
+    
+    </body>
+</html>
